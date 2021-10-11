@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo|CoffeeMemo</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/home.min.css">
+
+</head>
+
+<body>
+    <header class="header flexbox">
+        <div class="headerLogo">
+            <h1><a href="index.html">Coffee Memo</a></h1>
+        </div>
+        <div class="headerUserContent flexbox">
+            <div class="headerUserContent__name">
+                <p>usernameが入ります</p>
+            </div>
+            <div class="headerUserContent__logoutBtn">
+                <p><a href="login.html">Logout</a></p>
+            </div>
+        </div>
+    </header>
+
+    <div class="allWrapper flexbox">
+
+        <main class="main">
+            <div class="memo">
+                <div class="memo__title main__title"><h2>Memo</h2></div>
+                <div class="memo__content">
+                    <div class="name content">
+                        <h3 class="name__title content__title">Coffee Name</p>
+                        <input class="name__input memo__input" type="text">
+                    </div>
+                </div>
+
+                <div class="memo__contentWrapper flexbox">
+                    <div class="memo__content">
+                        <div class="taste content">
+                            <h3 class="taste__title content__title">Taste</h3>
+                            <table class="tasteTable">
+                                <tr>
+                                    <td class="tasteTable__child"><p>酸味</p><input class="taste__input memo__input" type="text"></td>
+                                    <td class="tasteTable__child"><p>香り</p><input class="taste__input memo__input" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td class="tasteTable__child"><p>苦味</p><input class="taste__input memo__input" type="text"></td>
+                                    <td class="tasteTable__child"><p>甘味</p><input class="taste__input memo__input" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td class="tasteTable__child"><p>コク</p><input class="taste__input memo__input" type="text"></td>
+                                    <td class="tasteTable__child"><p>マイルド</p><input class="taste__input memo__input" type="text"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="memo__content">
+                        <div class="place content">
+                            <h3 class="place__title content__title">Place/Shop</p>
+                            <div class="place__textArea content__textArea">
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="price content">
+                            <h3 class="price__title content__title">Price</p>
+                            <div class="price__input content__input">
+                                <input class="price__input memo__input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="memo__content">
+                    <div class="comment content">
+                        <h3 class="comment__title content__title">Comment</p>
+                        <div class="comment__textArea content__textArea">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar__inner">
+                <div class="sidebarLinks">
+                    <div class="sidebarLinks__title">
+                        <h2>Memo</h2>
+                    </div>
+                    <div class="sidebarLinks__btn"><a href="createMemo.html">Memo →</a></div>
+                </div>
+                <div class="sidebarLinks">
+                    <div class="sidebarLinks__title">
+                        <h2>History</h2>
+                    </div>
+                    <div class="sidebarLinks__btn"><a href="history.html">History →</a></div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2021 Coffee Memo. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/fadein.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

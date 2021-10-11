@@ -1,0 +1,21 @@
+//レスポンシブデザイン設定
+$widthTab:1024px; //1024px以下-タブレット
+$widthSp:599px; //600px以下−スマホ
+
+@mixin tab {
+  @media screen and (max-width: ($widthTab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: ($widthSp)) {
+    @content;
+  }
+}
+
+//定数
+$baseColor:#005083;
+$baseTransition: all 0.4s ease-in-out;
+$headerHeight:60px;
+$footerHeight:40px;

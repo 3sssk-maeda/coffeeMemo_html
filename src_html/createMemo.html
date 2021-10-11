@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Memo|CoffeeMemo</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/lower.min.css">
+
+</head>
+
+<body>
+    <header class="header flexbox">
+        <div class="headerLogo">
+            <h1><a href="index.html">Coffee Memo</a></h1>
+        </div>
+        <div class="headerUserContent flexbox">
+            <div class="headerUserContent__name">
+                <p>usernameが入ります</p>
+            </div>
+            <div class="headerUserContent__logoutBtn">
+                <p><a href="login.html">Logout</a></p>
+            </div>
+        </div>
+    </header>
+
+    <div class="allWrapper flexbox">
+
+        <main class="main memo">
+            <div class="memo__title main__title">
+                <h2>Memo</h2>
+            </div>
+            <div class="memo__contentWrapper">
+                <div class="memo__content memoName">
+                    <h3 class="memo__content_title">Coffee Name</h3>
+                    <input class="memo__content_input" type="text">
+                </div>
+
+                <div class="memo__flexbox flexbox">
+                    <div class="memo__flexbox_content memo__content">
+                        <div class="memo__content memoTaste">
+                            <h3 class="memo__content_title">Taste</h3>
+                            <div class="memoTaste__table">
+                                <div class="memoTaste__table_flexbox flexbox">
+                                    <div class="memoTaste__table_child">
+                                        <p>酸味</p><input class="memoTaste__input memo__content_input" type="text">
+                                    </div>
+                                    <div class="memoTaste__table_child">
+                                        <p>香り</p><input class="memoTaste__input memo__content_input" type="text">
+                                    </div>
+                                </div>
+                                <div class="memoTaste__table_flexbox flexbox">
+                                    <div class="memoTaste__table_child">
+                                        <p>苦味</p><input class="memoTaste__input memo__content_input" type="text">
+                                    </div>
+                                    <div class="memoTaste__table_child">
+                                        <p>甘味</p><input class="memoTaste__input memo__content_input" type="text">
+                                    </div>
+                                </div>
+                                <div class="memoTaste__table_flexbox flexbox">
+                                    <div class="memoTaste__table_child">
+                                        <p>コク</p><input class="memoTaste__input memo__content_input" type="text">
+                                    </div>
+                                    <div class="memoTaste__table_child">
+                                        <p>マイルド</p><input class="memoTaste__input memo__content_input" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="memo__flexbox_content memo__content">
+                        <div class="memo__content memoPlace">
+                            <h3 class="memo__content_title">Place/Shop</h3>
+                                <textarea class="memoPlace__textArea memo__content_textArea" name="" id="" cols="30"
+                                    rows="10"></textarea>
+                        </div>
+                        <div class="memo__content memoPrice">
+                            <h3 class="memo__content_title">Price</h3>
+                                <input class="memoPrice__input memo__content_input" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="memo__content memoComment">
+                    <h3 class="memo__content_title">Comment</h3>
+                        <textarea class="memoComment__textArea memo__content_textArea" name="" id="" cols="30"
+                            rows="10"></textarea>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar__inner">
+                <div class="sidebarLinks">
+                    <div class="sidebarLinks__title">
+                        <h2>Memo</h2>
+                    </div>
+                    <div class="sidebarLinks__btn"><a href="createMemo.html">Memo →</a></div>
+                </div>
+                <div class="sidebarLinks">
+                    <div class="sidebarLinks__title">
+                        <h2>History</h2>
+                    </div>
+                    <div class="sidebarLinks__btn"><a href="history.html">History →</a></div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2021 Coffee Memo. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/fadein.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

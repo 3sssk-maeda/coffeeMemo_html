@@ -1,0 +1,102 @@
+@import "_general.scss";
+
+.main{
+  &__title{
+    font-size: 24px;
+    margin: 0 0 50px;
+    font-family: serif;
+  }
+}
+
+//history
+.history{
+  &__contentWrapper{
+    width: 90%;
+    margin: 0 auto;
+  }
+  &__content{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 35px;
+    &:last-child{
+      margin: 0;
+    }
+    .historyName{
+      width: calc(100% - 80px);
+      a{
+        background-color: rgb(223, 223, 223);
+        padding: 15px 10px;
+        font-size: 20px;
+        display: block;
+        font-family: serif;
+        width: 100%;
+      }
+    }
+    .historyLike{
+      width:50px;
+      cursor: pointer;
+    }
+  }
+  &__pagination{
+    margin: 30px 0 0;
+    justify-content: center;
+    &--num{
+      margin: 0 10px;
+    }
+  }
+}
+
+//memo
+.memo{
+  &__contentWrapper{
+    width: 90%;
+    margin: 0 auto;
+  }
+  &__content{
+    margin: 0 0 30px;
+    &_title{
+      margin:0 0 10px;
+      font-size: 18px;
+      font-family: serif;
+    }
+    &_input{
+      padding: 10px;
+      background-color: rgb(223, 223, 223);
+      border: 1px solid black;
+      width: 100%;
+      &:focus{
+        background-color: white;
+      }
+    }
+    &_textArea{
+      padding: 10px;
+      background-color: rgb(223, 223, 223);
+      border: 1px solid black;
+      width: 100%;
+      &:focus{
+        background-color: white;
+      }
+    }
+  }
+  &__flexbox{
+    justify-content: space-between;
+    &_content{
+      width: 49%;
+    }
+  }
+  .memoTaste{
+    &__table{
+      &_flexbox{
+        justify-content: space-between;
+      }
+      &_child{
+        margin: 10px 0;
+        width: 48%;
+        p{
+          margin:0 0 5px;
+        }
+      }
+    }
+  }
+}

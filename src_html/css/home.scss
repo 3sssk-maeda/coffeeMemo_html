@@ -1,0 +1,45 @@
+@import "_general.scss";
+
+//login
+.loginContainer{
+  background-color: rgb(5,102,84);
+  min-height: 100vh;
+  padding: 100px 0 0;
+  h1{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+  }
+  img{
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.loginForm{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+  &-input{
+    margin: 0 0 20px;
+    input{
+      padding: 10px;
+      width: 200px;
+      border: none;
+    }
+  }
+  &-submit{
+    input{
+      border: none;
+      margin: 0 auto;
+      font-size: 18px;
+      display: block;
+    }
+  }
+}
